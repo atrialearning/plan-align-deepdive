@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Leadership Pressure Meter</title>
+
+<style>
+:root{
+  --atria-blue:#211499;
+  --atria-turquoise:#3FC2C2;
+  --bg:#E9FCFC;
+  --text:#000C48;
+  --muted:#367484;
+  --card:#ffffff;
+  --border:#CDFFFC;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:system-ui, Arial;
+  background:var(--bg);
+  color:var(--text);
+  padding:12px;
+}
+
+.wrap{
+  max-width:880px;
+  margin:auto;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:16px;
+}
+
+/* Header */
+.header{
+  background:var(--atria-blue);
+  color:white;
+  border-radius:10px;
+  padding:10px 14px;
+  margin-bottom:10px;
+}
+.header h1{
+  margin:0;
+  font-size:18px;
+}
+.header p{
+  margin:4px 0 0;
+  font-size:13px;
+  opacity:.92;
+  line-height:1.45;
+}
+
+/* Scenario box (compact + scannable) */
+.scenario{
+  background:#f7fbfb;
+  border:1px solid #e6f6f6;
+  border-radius:10px;
+  padding:10px 12px;
+  margin-bottom:12px;
+  font-size:13px;
+  line-height:1.5;
+}
+.scenario b{ color:var(--atria-blue); }
+
+/* Meter */
+.meter{
+  display:grid;
+  gap:10px;
+  margin-bottom:14px;
+}
+
+.row{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:6px;
+}
+
+@media(min-width:600px){
+  .row{
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+  }
+}
+
+.label{
+  font-weight:700;
+  font-size:13px;
+}
+
+.bar{
+  height:10px;
+  background:#e6f6f6;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.fill{
+  height:100%;
+  background:var(--atria-turquoise);
+}
+
+/* Task */
+.task{
+  background:#f7fbfb;
+  border:1px solid #e5f4f4;
+  border-radius:10px;
+  padding:12px;
+}
+
+.task h2{
+  margin:0 0 6px;
+  font-size:15px;
+  color:var(--atria-blue);
+}
+
+.task p{
+  margin:0 0 8px;
+  font-size:13px;
+  line-height:1.5;
+}
+
+/* Compact list */
+.grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:6px;
+}
+
+@media(min-width:640px){
+  .grid{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+.item{
+  font-size:13px;
+  background:white;
+  border:1px solid #e6f6f6;
+  border-radius:8px;
+  padding:8px;
+  line-height:1.45;
+}
+
+.footer{
+  font-size:12px;
+  color:var(--muted);
+  margin-top:10px;
+  text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrap">
+  <div class="card">
+
+    <div class="header">
+      <h1>Leadership Pressure Meter</h1>
+      <p>A quick snapshot of pressure points before you build your action plan.</p>
+    </div>
+
+    <div class="scenario">
+      <b>Scenario:</b>
+      Your team has just been informed of a last-minute company-wide audit happening in <b>5 days</b>.
+      No preparation has started. Several small tasks are pending (report updates, document filing,
+      equipment checks), and team members are unsure where to begin. One teammate is stressed,
+      another is focused on unrelated tasks, and you’re being asked for progress updates by your supervisor.
+    </div>
+
+    <div class="meter">
+
+      <div class="row">
+        <div class="label">Team stress level</div>
+        <div class="bar"><div class="fill" style="width:75%"></div></div>
+      </div>
+
+      <div class="row">
+        <div class="label">Task clarity</div>
+        <div class="bar"><div class="fill" style="width:30%"></div></div>
+      </div>
+
+      <div class="row">
+        <div class="label">Supervisor pressure</div>
+        <div class="bar"><div class="fill" style="width:60%"></div></div>
+      </div>
+
+      <div class="row">
+        <div class="label">Team alignment</div>
+        <div class="bar"><div class="fill" style="width:25%"></div></div>
+      </div>
+
+    </div>
+
+    <div class="task">
+
+      <h2>Your Leadership Challenge</h2>
+
+      <p>
+        Create a short action plan using the tools from this lesson to move your team from
+        <b>chaos to clarity</b>. Upload a Word/PDF document (max 5 pages) or clear photos of a hand-drawn plan.
+      </p>
+
+      <div class="grid">
+
+        <div class="item">
+          <b>Eisenhower Matrix</b><br>
+          List 8–10 tasks and categorize them as Do, Decide, Delegate, or Delete (add a short reason).
+        </div>
+
+        <div class="item">
+          <b>80/20 Rule</b><br>
+          Choose 2–3 tasks with the biggest impact and explain why.
+        </div>
+
+        <div class="item">
+          <b>FORDEC</b><br>
+          Outline: Facts, Options, Risks, Decide, Execute, Check.
+        </div>
+
+        <div class="item">
+          <b>Mission Alignment</b><br>
+          State your organization’s mission and how it influenced your plan.
+        </div>
+
+        <div class="item">
+          <b>Real-Life Examples</b><br>
+          Name 2–3 tasks where you can apply these tools in your role.
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer">
+      Atria Learning & Development • Plan & Align
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
