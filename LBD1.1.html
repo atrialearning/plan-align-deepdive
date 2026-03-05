@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<style>
+:root{
+--atria-blue:#cdfffc;
+--atria-turquoise:#3FC2C2;
+--bg:#fffff;
+--text:#000c48;
+--muted:#367484;
+--card:#ffffff;
+--border:#CDFFFC;
+}
+
+*{box-sizing:border-box}
+
+body{
+margin:0;
+font-family:system-ui,Arial;
+background:var(--bg);
+color:var(--text);
+padding:12px;
+}
+
+.wrap{
+max-width:880px;
+margin:auto;
+}
+
+.card{
+background:var(--card);
+border:1px solid var(--border);
+border-radius:14px;
+padding:16px;
+}
+
+/* Header */
+
+.header{
+background:var(--atria-blue);
+color:black;
+border-radius:10px;
+padding:10px 14px;
+margin-bottom:12px;
+}
+
+.header h1{
+margin:0;
+font-size:20px;
+}
+
+.header p{
+margin:4px 0 0;
+font-size:13px;
+opacity:.9;
+}
+
+/* Meter */
+
+.meter{
+display:grid;
+gap:10px;
+margin-bottom:14px;
+}
+
+.row{
+display:grid;
+grid-template-columns:1fr;
+gap:6px;
+}
+
+@media(min-width:600px){
+.row{
+grid-template-columns:1fr 1fr;
+align-items:center;
+}
+}
+
+.label{
+font-weight:700;
+font-size:13px;
+}
+
+.bar{
+height:10px;
+background:#e6f6f6;
+border-radius:20px;
+overflow:hidden;
+}
+
+.fill{
+height:100%;
+background:var(--atria-turquoise);
+}
+
+/* Task */
+
+.task{
+background:#f7fbfb;
+border:1px solid #e5f4f4;
+border-radius:10px;
+padding:12px;
+}
+
+.task h2{
+margin:0 0 6px;
+font-size:15px;
+color:black;
+}
+
+.task p{
+margin:0 0 8px;
+font-size:13px;
+line-height:1.5;
+}
+
+/* Compact list */
+
+.grid{
+display:grid;
+grid-template-columns:1fr;
+gap:6px;
+}
+
+@media(min-width:640px){
+.grid{
+grid-template-columns:1fr 1fr;
+}
+}
+
+.item{
+font-size:13px;
+background:white;
+border:1px solid #e6f6f6;
+border-radius:8px;
+padding:8px;
+}
+
+.footer{
+font-size:12px;
+color:var(--muted);
+margin-top:10px;
+text-align:center;
+}
+
+</style>
+
+
+
+
+<div class="wrap">
+<div class="card">
+
+<div class="header">
+<h1>Leadership Pressure Meter</h1>
+<p>Your team faces a last-minute audit in 5 days. Tasks exist but priorities are unclear.</p>
+</div>
+
+<div class="meter">
+
+<div class="row">
+<div class="label">Team stress level</div>
+<div class="bar"><div class="fill" style="width:75%"></div></div>
+</div>
+
+<div class="row">
+<div class="label">Task clarity</div>
+<div class="bar"><div class="fill" style="width:30%"></div></div>
+</div>
+
+<div class="row">
+<div class="label">Supervisor pressure</div>
+<div class="bar"><div class="fill" style="width:60%"></div></div>
+</div>
+
+<div class="row">
+<div class="label">Team alignment</div>
+<div class="bar"><div class="fill" style="width:25%"></div></div>
+</div>
+
+</div>
+
+<div class="task">
+
+<h2>Your Leadership Challenge</h2>
+
+<p>
+Create a short action plan using the tools from this lesson to move your team from
+<b>chaos to clarity</b>.
+ <br><u>
+Upload a Word/PDF document (max 5 pages) or clear photos of a hand-drawn plan.</u>
+</p>
+
+<div class="grid">
+
+<div class="item">
+<b>Eisenhower Matrix</b><br>
+List 8–10 tasks and categorize them as
+Do, Decide, Delegate, or Delete.
+</div>
+
+<div class="item">
+<b>80/20 Rule</b><br>
+Choose 2–3 tasks with the biggest impact.
+</div>
+
+<div class="item">
+<b>FORDEC</b><br>
+Outline the steps: Facts, Options, Risks, Decide, Execute, Check.
+</div>
+
+<div class="item">
+<b>Mission Alignment</b><br>
+Explain how your organization’s mission influenced your plan.
+</div>
+
+<div class="item">
+<b>Real-Life Examples</b><br>
+Name 2–3 tasks where you can apply these tools in your role.
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+Atria Learning & Development • Plan & Align
+</div>
+
+</div>
+</div>
+
+
+
+</html>
